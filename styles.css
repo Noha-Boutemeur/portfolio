@@ -400,10 +400,6 @@ body {
         font-size: 2em;
     }
 
-    .social-logos {
-        flex-direction: row;
-        align-items: center;
-    }
 
     .social-logos i {
         font-size: 30px;
