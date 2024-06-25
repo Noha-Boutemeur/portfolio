@@ -8,24 +8,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+
+<div class="social-links">
+    <div class="social-logos">
+        <a href="https://github.com/Noha-Boutemeur" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/noha-boutemeur-a7b6a4283/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:nb.boutemeur@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+</div>
+
 <div class="container">
-    <section class="presentation-section">
+    <section class="presentation-section" id="presentation">
         <div class="my-infos">
-            <div>
-                <h1>Noha Boutemeur</h1>
+            <h1>Noha Boutemeur</h1>
+            <div class="formation">
                 <h2>Développeur informatique</h2>
                 <h5>Etudiant en 3ème année de BUT Informatique - IUT2 Université Grenoble Alpes</h5>
             </div>
-            <div class="social-links">
-                <h2>Contact</h2>
-                <div class="social-logos">
-                    <a href="lien_vers_reseau_social" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="lien_vers_reseau_social" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:nb.boutemeur@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                </div>
-            </div>
         </div>
         <div class="wave-top"></div>
+    </section>
+
+    <section class="a-propos-section" id="a-propos">
         <div class="a-propos-container">
             <div class="a-propos-title">
                 <h5>Présentation</h5>
@@ -53,7 +57,94 @@
             </div>
         </div>
     </section>
-    <section class="projects">
+
+    <section class="competences-section" id="competences">
+        <h2>Compétences</h2>
+        <div class="competences-container">
+            <div class="programming-languages">
+                <div class="language">
+
+                    <img src="./images/langages/javascript.svg" alt="JavaScript Logo" class="language-logo">
+                    <div class="langage-content">
+                        <h3>JavaScript</h3>
+                        <p>React, NodeJS, Cypress</p>
+                    </div>
+
+                </div>
+                <div class="language">
+                    <img src="./images/langages/php.svg" alt="PHP Logo" class="language-logo">
+                    <div class="langage-content">
+                        <h3>PHP, HTML, CSS</h3>
+                        <p>Symfony, SCSS</p>
+                    </div>
+                </div>
+                <div class="language">
+                    <img src="./images/langages/sql.svg" alt="SQL Logo" class="language-logo">
+                    <div class="langage-content">
+                        <h3>SQL</h3>
+                        <p>PostgreSQL, MySQL</p>
+                    </div>
+                </div>
+                <div class="language">
+                    <img src="./images/langages/java.svg" alt="Java Logo" class="language-logo">
+                    <div class="langage-content">
+                        <h3>Java</h3>
+                        <p>JavaFX, Android</p>
+                    </div>
+                </div>
+                <div class="language">
+                    <img src="./images/langages/c.svg" alt="C Logo" class="language-logo">
+                    <div class="langage-content">
+                        <h3>C++, C</h3>
+                    </div>
+                </div>
+                <div class="language">
+                    <img src="./images/langages/python.svg" alt="Python Logo" class="language-logo">
+                    <div class="langage-content">
+                        <h3>Python</h3>
+                        <p>Pygame</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tools">
+                <h3>Outils maîtrisés</h3>
+                <div class="outils-list">
+                    <div class="outil">
+                        <img src="./images/outils/intellij.svg" alt="IntelliJ Logo" class="outil-logo">
+                        <p>Intellij</p>
+                    </div>
+                    <div class="outil">
+                        <img src="./images/outils/androidstudio.svg" alt="Android Studio Logo" class="outil-logo">
+                        <p>Android Studio</p>
+                    </div>
+                    <div class="outil">
+                        <img src="./images/outils/vscode.svg" alt="VSCode Logo" class="outil-logo">
+                        <p>VSCode</p>
+                    </div>
+                    <div class="outil">
+                        <img src="./images/outils/linux.svg" alt="Linux/Debian Logo" class="outil-logo">
+                        <p>Linux/Debian</p>
+                    </div>
+                    <div class="outil">
+                        <img src="./images/outils/docker.svg" alt="Docker Logo" class="outil-logo">
+                        <p>Docker</p>
+                    </div>
+                    <div class="outil">
+                        <img src="./images/outils/git.svg" alt="Git Logo" class="outil-logo">
+                        <p>Git</p>
+                    </div>
+                    <div class="outil">
+                        <img src="./images/outils/figma.svg" alt="Figma Logo" class="outil-logo">
+                        <p>Figma</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projects" id="projects">
         <h2>Mes Projets</h2>
         <div class="project-list">
             <div class="project">
@@ -72,10 +163,33 @@
                     <a href="#" target="_blank">Voir le projet</a>
                 </div>
             </div>
-            <!-- Ajoute d'autres projets selon tes besoins -->
+            <div class="project">
+                <img src="projet3.jpg" alt="Projet 3">
+                <div class="project-info">
+                    <h3>Nom du Projet 3</h3>
+                    <p>Description du projet 3</p>
+                    <a href="#" target="_blank">Voir le projet</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="projet4.jpg" alt="Projet 4">
+                <div class="project-info">
+                    <h3>Nom du Projet 4</h3>
+                    <p>Description du projet 4</p>
+                    <a href="#" target="_blank">Voir le projet</a>
+                </div>
+            </div>
         </div>
     </section>
 </div>
+
+<div class="nav-bar">
+    <a href="#presentation" class="nav-link active">Accueil</a>
+    <a href="#a-propos" class="nav-link">A propos</a>
+    <a href="#competences" class="nav-link">Compétences</a>
+    <a href="#projects" class="nav-link">Projets</a>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>

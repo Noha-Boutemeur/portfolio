@@ -36,10 +36,21 @@ body {
 .my-infos {
     display: flex;
     flex-direction: row;
-    gap: 15%;
+    gap: 10%;
     justify-content: center;
     text-align: start;
     margin-top: 8em;
+}
+
+.my-infos .formation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+}
+
+.my-infos .formation h2,.my-infos .formation h5{
+    margin-top: auto;
 }
 
 .my-infos h1 {
@@ -52,21 +63,37 @@ body {
 }
 
 .social-links {
-    margin-top: 20px;
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    background-color: rgba(36, 47, 66, 0.9);
+    padding: 20px;
+    border-radius: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+}
+
+.social-links h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 .social-logos {
-    margin-top: 0.6em;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .social-logos a {
-    margin: 0 10px;
+    margin: 0;
 }
 
 .social-logos i {
-    font-size: 40px;
+    font-size: 30px;
     transition: color 0.3s ease;
 }
 
@@ -74,10 +101,9 @@ body {
     color: #5263ff;
 }
 
+
 .a-propos-container {
-    background-image: url("./images/a-propos.svg");
-    background-size: cover;
-    background-position: center;
+    background-color: #181818;
     height: 60em;
     text-align: center;
     overflow: hidden;
@@ -157,6 +183,8 @@ body {
     flex-wrap: wrap;
     gap: 2em;
     justify-content: center;
+    width: 75%;
+    margin: auto;
 }
 
 .project {
@@ -208,6 +236,131 @@ body {
 .project-info a:hover {
     background-color: #4051b5;
 }
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(36, 47, 66, 0.9);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    z-index: 1000;
+}
+
+.nav-bar .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-bar .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: #5263ff;
+    transition: width 0.3s ease;
+}
+
+.nav-bar .nav-link:hover::before,
+.nav-bar .nav-link.active::before {
+    width: 100%;
+}
+
+.nav-bar .nav-link:hover,
+.nav-bar .nav-link.active {
+    color: #5263ff;
+}
+
+.competences-section {
+    background-color: #181818;
+    padding: 2em;
+    border-radius: 10px;
+    margin-top: 2em;
+}
+
+.competences-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.competences-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.programming-languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5em;
+}
+
+.programming-languages, .tools {
+    background-color: #242f42;
+    padding: 1em;
+    border-radius: 10px;
+    width: 45%;
+    margin-bottom: 2em;
+}
+
+.programming-languages .language, .tools h3 {
+    display: flex;
+    align-items: center;
+}
+
+.programming-languages .language {
+    margin-bottom: 0.5em;
+}
+
+.programming-languages .language-logo, .outils-list .outil-logo {
+    width: 3.7em;
+    height: 3.7em;
+}
+
+.programming-languages .language-logo{
+    margin-right: 1em;
+
+}
+
+.programming-languages h3, .tools h3 {
+    font-size: 1.5em;
+    color: #5263ff;
+}
+
+.programming-languages .sub-skills {
+    margin-left: 3.5em; /* aligns the sub-skills text with the language name */
+    font-size: 1em;
+    color: #aaa;
+    margin-bottom: 1em;
+}
+.outils-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    width: 70%;
+    margin: 3em auto auto;
+}
+
+.tools h3{
+    justify-content: center;
+}
+
+
+
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
@@ -305,6 +458,15 @@ body {
     }
 
     .project {
+        width: 90%;
+    }
+
+    .competences-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .programming-languages, .tools {
         width: 90%;
     }
 }
