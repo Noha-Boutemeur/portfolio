@@ -349,10 +349,14 @@ body {
 .outils-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 4em;
     justify-content: center;
     width: 70%;
     margin: 3em auto auto;
+}
+
+.outil{
+    text-align: center;
 }
 
 .tools h3{
