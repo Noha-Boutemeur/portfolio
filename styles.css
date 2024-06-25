@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    padding: 0;
+}
+
+.wave-top, .wave-bottom {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 25em;
+    overflow: hidden;
+    margin-bottom: 0 !important;
+}
+
+.wave-top {
+    background-image: url("./images/bg-top.svg");
+}
+
+.wave-bottom {
+    background-image: url("./images/bg-bottom.svg");
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.my-infos {
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    justify-content: center;
+    text-align: start;
+    margin-top: 8em;
+}
+
+.my-infos h1 {
+    font-size: 5em;
+    border-bottom: 15px solid white;
+}
+
+.my-infos h2 {
+    font-size: 3em;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-logos {
+    margin-top: 0.6em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-logos a {
+    margin: 0 10px;
+}
+
+.social-logos i {
+    font-size: 40px;
+    transition: color 0.3s ease;
+}
+
+.social-logos a:hover i {
+    color: #5263ff;
+}
+
+.a-propos-container {
+    background-image: url("./images/a-propos.svg");
+    background-size: cover;
+    background-position: center;
+    height: 60em;
+    text-align: center;
+    overflow: hidden;
+}
+
+.a-propos-content img {
+    height: 30em;
+    border-radius: 50px;
+}
+
+.a-propos-content {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.a-propos-right {
+    width: 35%;
+}
+
+.a-propos-soft-skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.soft-skill {
+    width: 8em;
+    height: 6em;
+    background-color: #242f42;
+    border-radius: 20px;
+}
+
+.soft-skill p {
+    text-align: center !important;
+    font-size: 1em !important;
+    font-weight: bold;
+}
+
+.a-propos-right i {
+    margin-top: 10%;
+    font-size: 2em;
+}
+
+.a-propos-content .a-propos-right p {
+    width: 100%;
+    font-size: 1.5em;
+    text-align: start;
+}
+
+.a-propos-content .a-propos-right > p {
+    margin-top: 1em;
+}
+
+.a-propos-title {
+    margin-top: 3%;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.projects {
+    background-color: #242f42;
+    padding: 2em;
+    border-radius: 10px;
+    margin-top: 2em;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #5263ff;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.project {
+    background-color: #121212;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1em;
+    text-align: center;
+}
+
+.project-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #5263ff;
+}
+
+.project-info p {
+    font-size: 1em;
+    color: #aaa;
+    margin-bottom: 1em;
+}
+
+.project-info a {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    background-color: #5263ff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-info a:hover {
+    background-color: #4051b5;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .my-infos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+    .my-infos h1 {
+        font-size: 4em;
+    }
+
+    .my-infos h2 {
+        font-size: 2.5em;
+    }
+
+    .a-propos-content {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .a-propos-right {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .my-infos h1 {
+        font-size: 3em;
+    }
+
+    .my-infos h2 {
+        font-size: 2em;
+    }
+
+    .social-logos {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .social-logos i {
+        font-size: 30px;
+    }
+
+    .a-propos-title{
+        margin-bottom: 1em;
+    }
+
+    .a-propos-content img {
+        height: 15em;
+        width: 15em;
+        border-radius: 10em;
+        margin: auto;
+    }
+
+    .a-propos-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .a-propos-right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .a-propos-soft-skills {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .a-propos-content .a-propos-right > p {
+        margin-top: 1em;
+        font-size: 1em;
+
+    }
+
+    .soft-skill {
+        width: 8em;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .projects {
+        padding: 1em;
+    }
+
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+    }
+}
