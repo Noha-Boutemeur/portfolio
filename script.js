@@ -3,12 +3,12 @@
 document.querySelectorAll('.nav-link').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-
+        const navBar = document.querySelector("body > div.nav-bar");
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
 
         window.scrollTo({
-            top: targetElement.offsetTop,
+            top: targetElement.offsetTop - navBar.clientHeight,
             behavior: 'smooth'
         });
 
