@@ -69,13 +69,13 @@ document.querySelectorAll('.en-savoir-plus i').forEach(icon => {
             Swal.fire({
                 html: `
                     <div>
-                        <h3>Image 1</h3>
+                        <h3>Sprint to the finish</h3>
                         <img src="./images/projets/sprintToTheFinish.png" alt="Sprint To The Finish Image" style="width: 100%;">
                         <p>Jeu coopératif en simultané pour deux joueurs. Le joueur 1 doit se déplacer et atteindre la ligne d’arrivée, 
                         Tandis que le joueur 2 doit surveiller les ennemis qui se déplacent en les regardants ou en utilisant la souris ce qui permettra de les immobiliser et d'utiliser des interrupteurs pour aider le joueur 1.</p>
                     </div>
                     <div>
-                        <h3>Image 2</h3>
+                        <h3>Simon</h3>
                         <img src="./images/projets/simon.png" alt="Simon Image" style="width: 100%;">
                         <p>Jouez au célèbre jeu de société Simon !
                             3 modes de jeux sont disponibles :
@@ -90,12 +90,12 @@ document.querySelectorAll('.en-savoir-plus i').forEach(icon => {
                         </p>
                     </div>
                     <div>
-                        <h3>Image 2</h3>
+                        <h3>Survive Against Robots</h3>
                         <img src="./images/projets/surviveAgainstRobots.png" alt="Survive Against Robots Image" style="width: 100%;">
                         <p>Survivez contre des vagues de robots en vous déplaçant et en tirant en utilisant les flèches directionnelles. N’hésitez pas à ramasser des bonus pour vous aider à survivre !</p>
                     </div>
                     <div>
-                        <h3>Image 2</h3>
+                        <h3>GazeRace</h3>
                         <img src="./images/projets/gazeRace.png" alt="GazeRace Image" style="width: 100%;">
                         <p>Jeu de voiture où le but est d'esquiver les autres véhicules ou obstacles.</p>
                     </div>

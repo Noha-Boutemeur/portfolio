@@ -178,7 +178,7 @@ body {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 1em;
-    color: #5263ff;
+    color: white;
 }
 
 .project-list {
@@ -480,6 +480,70 @@ body {
     color: #aaa;
 }
 
+.formations-section {
+    background-color: #242f42;
+    padding: 2em;
+    border-radius: 10px;
+    margin-top: 2em;
+}
+
+.formations-title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.formations-title h5 {
+    font-size: 1.5em;
+    color: #aaa;
+}
+
+.formations-title h2 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.formations-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+}
+
+.formation-item {
+    background-color: #181818;
+    padding: 1em;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.formation-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.formation-item h3 {
+    font-size: 1.8em;
+    color: #5263ff;
+}
+
+.formation-item p {
+    font-size: 1.2em;
+    color: #aaa;
+    margin: 0.5em 0;
+    text-decoration: underline;
+}
+
+.formation-item span {
+    font-size: 1em;
+    color: #aaa;
+}
+
+
 
 
 
@@ -613,6 +677,20 @@ body {
     .nav-bar .nav-link {
         font-size: 1em;
     }
+
+    .formation-item {
+        width: 60%;
+        margin: auto;
+    }
+
+    .formations-content{
+        flex-wrap: wrap;
+        font-size: 0.75em;
+    }
+
+    .formations-title h2 {
+        font-size: 2em;
+    }
 }
 
 
@@ -623,4 +701,10 @@ body {
     .nav-bar .nav-link {
         font-size: 0.75em;
     }
+
+    .formation-item {
+        width: 100%;
+        margin: auto;
+    }
+
 }
