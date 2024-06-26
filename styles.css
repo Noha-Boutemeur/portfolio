@@ -188,6 +188,9 @@ body {
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #121212;
     border-radius: 10px;
     overflow: hidden;
@@ -205,6 +208,7 @@ body {
     justify-content: center;
     gap: 1em;
     text-align: center;
+    margin-top: auto;
 }
 
 .project-button .en-savoir-plus {
@@ -391,6 +395,79 @@ body {
 
 .tools h3{
     justify-content: center;
+}
+
+/* Styles généraux pour les modales SweetAlert */
+.swal2-popup {
+    font-size: 1.2em;
+    background-color: #121212;
+    color: white;
+    border: 2px solid #5263ff;
+    border-radius: 10px;
+}
+
+.swal2-title {
+    font-size: 2em;
+    color: #5263ff;
+    margin-bottom: 1em;
+}
+
+.swal2-html-container {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.swal2-buttonswrapper {
+    margin-top: 2em;
+}
+
+/* Styles pour les modales avec plusieurs images */
+.swal-large {
+    width: 75%;
+    height: 45em;
+    overflow-y: auto;
+}
+
+.swal-large .swal2-html-container > div {
+    margin-bottom: 2em;
+}
+
+.swal-large img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 70% !important;
+}
+
+.swal-large h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    color: #5263ff;
+}
+
+.swal-large p {
+    font-size: 1.2em;
+    color: #aaa;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.swal-semi {
+    width: 45%;
+    text-align: center;
+}
+
+.swal-semi ul {
+    width: 80%;
+    margin: auto;
+}
+
+.swal-large ul {
+    margin: auto;
+    width: 75%;
+    text-align: start;
+}
+.swal-large ul li {
+    color: #aaa;
 }
 
 
