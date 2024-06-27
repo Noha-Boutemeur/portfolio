@@ -167,6 +167,10 @@ body {
     margin-bottom: 2em;
 }
 
+.a-propos-title h5 {
+    color: #aaa;
+}
+
 .projects {
     background-color: #242f42;
     padding: 2em;
@@ -203,7 +207,10 @@ body {
 }
 
 .project.large {
-    width: 55%;
+    width: 40%;
+}
+.project.large .project-image{
+    height: 10em;
 }
 
 .project.large .project-info{
@@ -247,7 +254,7 @@ body {
 .project img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .project-info {
@@ -265,6 +272,7 @@ body {
     font-size: 1em;
     color: #aaa;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .project-info a {
@@ -382,11 +390,11 @@ body {
 
 .programming-languages h3, .tools h3 {
     font-size: 1.5em;
-    color: #5263ff;
+    color: white;
 }
 
 .programming-languages .sub-skills {
-    margin-left: 3.5em; /* aligns the sub-skills text with the language name */
+    margin-left: 3.5em;
     font-size: 1em;
     color: #aaa;
     margin-bottom: 1em;
@@ -622,6 +630,7 @@ body {
         margin-bottom: 1em;
         font-size: 1em;
     }
+
 
     .a-propos-content img {
         height: 15em;

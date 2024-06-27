@@ -65,6 +65,31 @@ document.querySelectorAll('.en-savoir-plus i').forEach(icon => {
                     popup: 'swal-semi'
                 }
             });
+        } else if (projectTitle === "Eticeo"){
+            Swal.fire({
+                html: `
+                    <div>
+                        <h3>Tableau de bord</h3>
+                        <img src="./images/projets/dashboard.png" alt="Dashboard Image" style="width: 100%;">
+                        <p>Dans le cadre de mon alternance chez Eticeo, j'ai développé un dashboard permettant de centraliser toutes les informations des différentes plateformes Moodle des clients de l'entreprise.
+                        Ce tableau de bord réalisé en Symfony, récupère les informations des plateformes, les traites et les affiche. Il existe différente page permettant d'accéder aux diverses informations.
+                        Comme une page pour lister tout plugins moodle et de voir chez quel client il est installé, une page affichant les repos github et les versions des plugins disponible dessus, ect.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Boosticeo</h3>
+                        <img src="./images/projets/boosticeo.png" alt="Boosticeo Image" style="width: 100%;">
+                        <p>En fonction des nouveaux besoins de nos clients, nous devons améliorer nos plugins. L’une des améliorations auxquelles 
+                        j’ai participé était sur un plugin qui impacte le thème du site. Ce plugin nommé Boosticeo est un plugin utilisé sur plusieurs pages et sert à 
+                        intégrer des éléments de style personnalisé pour certaines pages. En ce qui concerne l’amélioration de Boosticeo, elle consiste à remplacer la fonctionnalité du plugin qui 
+                        permettait d’avoir deux tableaux de bord mais cette fois-ci, en avoir jusqu’à 5 et donc afficher jusqu'à 5 pages différente.
+                        </p>
+                    </div>
+                `,
+                customClass: {
+                    popup: 'swal-large'
+                }
+            });
         } else if (projectTitle === "GazePlay") {
             Swal.fire({
                 html: `
