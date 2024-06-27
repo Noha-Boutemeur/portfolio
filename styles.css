@@ -592,6 +592,13 @@ body {
         justify-content: space-around;
     }
 
+    .project {
+        width: 40%;
+    }
+    .project.large{
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -613,6 +620,7 @@ body {
 
     .a-propos-title{
         margin-bottom: 1em;
+        font-size: 1em;
     }
 
     .a-propos-content img {
@@ -694,13 +702,34 @@ body {
     }
 }
 
+@media (max-width: 450px) {
+    .my-infos h1 {
+        font-size: 2em;
+        white-space: nowrap;
+        border-bottom: 0.2em solid white;
+    }
+
+    .my-infos h2 {
+        font-size: 1em;
+        white-space: nowrap;
+        border-bottom: 0.2em solid white;
+    }
+    .my-infos h5 {
+        font-size: 0.5em;
+        width: 60%;
+    }
+}
+
+
+
 
 @media (max-width: 400px) {
     .nav-bar{
         gap: 0;
     }
     .nav-bar .nav-link {
-        font-size: 0.5em;
+
+        padding: 0.4em;
     }
 
     .formation-item {
