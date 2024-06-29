@@ -53,16 +53,16 @@ document.querySelectorAll('.en-savoir-plus i').forEach(icon => {
                 html: '<p>' +
                     'Ce jeu est un jeu multijoueur, un peu comme Smash Bros, mais dans l\'espace. ' +
                     'Vous évoluez dans un système solaire généré aléatoirement et composé de planètes miniatures (comparées à la taille de votre robot). ' +
-                    'La gravité y est réaliste, vous êtes attiré par les planètes les plus proches et les plus massives. Vous disposez de 3 armes : <br> <br>' +
+                    'La gravité y est réaliste, vous êtes attiré par les planètes les plus proches et les plus massives. Vous disposez de 3 armes : <br> <br></p>' +
                     '<ul>' +
                         '<li>Le minigun, qui tire une rafale de balles </li>' +
                         '<li>Le fusil à pompe, qui tire beaucoup de balles en une seule fois </li>' +
                         '<li>Le pistolet à trou noir, qui tire un trou noir ayant son propre champ gravitationnel très puissant. </li>' +
                     '</ul> <br>' +
-                    'Votre but est d\'éjecter les autres joueurs dans le vide en leur infligeant des chocs avec vos balles ou en les propulsant dans l\'espace avec un trou noir. Lorsque vous êtes touché, votre pourcentage augmente. Le nombre de coups que vous recevez est multiplié par ce pourcentage.' +
+                    '<p>Votre but est d\'éjecter les autres joueurs dans le vide en leur infligeant des chocs avec vos balles ou en les propulsant dans l\'espace avec un trou noir. Lorsque vous êtes touché, votre pourcentage augmente. Le nombre de coups que vous recevez est multiplié par ce pourcentage.' +
                     '</p>',
                 customClass: {
-                    popup: 'swal-semi'
+                    popup: 'swal-large'
                 }
             });
         } else if (projectTitle === "Eticeo"){

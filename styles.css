@@ -113,6 +113,8 @@ body {
 
 .a-propos-content img {
     height: 30em;
+    margin-top: auto;
+    margin-bottom: auto;
     border-radius: 50px;
 }
 
@@ -155,6 +157,14 @@ body {
     width: 100%;
     font-size: 1.5em;
     text-align: start;
+}
+
+.a-propos-content .a-propos-right .a-propos-text  {
+    margin-top: 2em;
+    font-size: 0.7em;
+    display:flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
 
 .a-propos-content .a-propos-right > p {
@@ -553,7 +563,24 @@ body {
 }
 
 
+.project-competences {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin: 3em auto auto;
 
+}
+
+.project-competences p {
+    border-radius: 1em;
+    padding: 0.30em 0.5em 0.30em 0.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:white;
+    text-align: center;
+    background-color: rgb(82, 99, 255);
+}
 
 
 /* Responsive Styles */
